@@ -1,0 +1,26 @@
+from datasets import load_dataset
+from transformers import pipeline
+import numpy as np
+import pandas as pd
+
+dataset = load_dataset("nyu-mll/glue", "sst2")
+validation = dataset["validation"]
+
+classifier = pipeline(
+    "sentiment-analysis",
+    model="distilbert-base-uncased-finetuned-sst-2-english",
+    device=-1
+)
+
+texts = [ex["sentence"] for ex in validation]
+gold = [int(ex["label"]) for ex in validation]
+
+results = []
+for i in range(0, len(texts), 32):
+    results.extend(
+        classifier(texts[i:i+32], truncation=True, max_length=512)
+    )
+
+pred = [1 if r["label"].upper() == "POSITIVE" else 0 for r in results]
+accuracy = np.mean(np.array(pred) == np.array(gold))
+print(accuracy)
