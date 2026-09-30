@@ -1,0 +1,31 @@
+id,category,sentence,gold_label,prediction,correct
+1,negation,"I wouldn't say the movie was good.",NEGATIVE,NEGATIVE,Yes
+2,negation,"The movie wasn't bad at all.",POSITIVE,POSITIVE,Yes
+3,negation,"The film was not particularly enjoyable.",NEGATIVE,NEGATIVE,Yes
+4,negation,"It wasn't the worst movie I've seen.",POSITIVE,NEGATIVE,No
+5,negation,"I can't say that I enjoyed the film.",NEGATIVE,POSITIVE,No
+6,negation,"There was nothing disappointing about the movie.",POSITIVE,POSITIVE,Yes
+7,negation,"The acting was anything but impressive.",NEGATIVE,POSITIVE,No
+8,negation,"The movie was hardly entertaining.",NEGATIVE,NEGATIVE,Yes
+9,negation,"It is not impossible to enjoy this film.",POSITIVE,POSITIVE,Yes
+10,negation,"I don't think the movie was terrible.",POSITIVE,POSITIVE,Yes
+11,contrast,"The story was weak, but the acting was excellent.",POSITIVE,POSITIVE,Yes
+12,contrast,"The acting was excellent, but the story was terrible.",NEGATIVE,NEGATIVE,Yes
+13,contrast,"I expected a disaster, but the movie was surprisingly good.",POSITIVE,POSITIVE,Yes
+14,contrast,"The beginning was promising, but the rest was painfully boring.",NEGATIVE,NEGATIVE,Yes
+15,contrast,"Although the plot was predictable, I thoroughly enjoyed the film.",POSITIVE,POSITIVE,Yes
+16,contrast,"Although the visuals were beautiful, the movie was disappointing.",NEGATIVE,NEGATIVE,Yes
+17,contrast,"It started badly, yet eventually became genuinely entertaining.",POSITIVE,POSITIVE,Yes
+18,contrast,"The cast was talented; however, the film itself was tedious.",NEGATIVE,NEGATIVE,Yes
+19,contrast,"Despite its flaws, this was an enjoyable movie.",POSITIVE,POSITIVE,Yes
+20,contrast,"Despite a strong opening, the movie ultimately failed.",NEGATIVE,NEGATIVE,Yes
+21,complex,"The movie is good only if you enjoy wasting two hours.",NEGATIVE,POSITIVE,No
+22,complex,"I wanted to hate this film, but I couldn't.",POSITIVE,NEGATIVE,No
+23,complex,"I wanted to like this film, but I couldn't.",NEGATIVE,NEGATIVE,Yes
+24,complex,"Calling this movie enjoyable would be generous.",NEGATIVE,POSITIVE,No
+25,complex,"This is no ordinary bad movie; it is absolutely dreadful.",NEGATIVE,NEGATIVE,Yes
+26,complex,"For a movie I expected to hate, it was remarkably enjoyable.",POSITIVE,POSITIVE,Yes
+27,complex,"The movie was too good to dismiss as another generic comedy.",POSITIVE,NEGATIVE,No
+28,complex,"I wish I could say the film was worth watching.",NEGATIVE,POSITIVE,No
+29,complex,"It would be unfair to call this a bad movie.",POSITIVE,NEGATIVE,No
+30,complex,"The film somehow manages not to be boring.",POSITIVE,POSITIVE,Yes
